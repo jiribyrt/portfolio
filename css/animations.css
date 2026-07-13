@@ -1,0 +1,90 @@
+/*
+========================================
+Jiří Byrt Portfolio
+Animace
+========================================
+*/
+
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.page-blob-one {
+    animation: blobMoveOne 8s ease-in-out infinite alternate;
+}
+
+.page-blob-two {
+    animation: blobMoveTwo 10s ease-in-out infinite alternate;
+}
+
+@keyframes blobMoveOne {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(-35px, 25px);
+    }
+}
+
+@keyframes blobMoveTwo {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(35px, -25px);
+    }
+}
+
+.scroll-indicator span {
+    animation: indicatorPulse 1.6s ease-in-out infinite;
+}
+
+@keyframes indicatorPulse {
+    0%,
+    100% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+.skill-progress span {
+    animation: skillLoad 1.4s ease forwards;
+    transform-origin: left;
+}
+
+@keyframes skillLoad {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
