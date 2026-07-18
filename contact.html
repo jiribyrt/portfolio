@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Kontaktujte Jiřího Byrta a nezávazně poptejte nový web, redesign nebo správu existujících webových stránek."
+    >
+
+    <title>Kontakt | Jiří Byrt</title>
+
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body id="top">
+
+<header class="navbar" id="navbar">
+    <a href="index.html" class="logo">Jiří Byrt</a>
+
+    <button
+        class="hamburger"
+        id="hamburger"
+        type="button"
+        aria-label="Otevřít navigaci"
+        aria-expanded="false"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="nav-menu" id="nav-menu">
+        <ul>
+            <li><a href="about.html">O mně</a></li>
+            <li><a href="services.html">Služby</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="process.html">Proces</a></li>
+            <li><a href="contact.html" class="active-link">Kontakt</a></li>
+        </ul>
+
+        <a class="cta-btn" href="#order-form">
+            Nezávazná konzultace
+        </a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO -->
+    <section class="page-hero contact-page-hero">
+        <div class="page-blob page-blob-one"></div>
+        <div class="page-blob page-blob-two"></div>
+
+        <div class="page-hero-content reveal">
+            <div class="breadcrumb">
+                <a href="index.html">Domů</a>
+                <span>/</span>
+                <strong>Kontakt</strong>
+            </div>
+
+            <span class="page-label">Pojďme se spojit</span>
+
+            <h1>
+                Máte nápad na web?
+                Pojďme ho společně probrat.
+            </h1>
+
+            <p>
+                Nemusíte mít připravené přesné zadání. Stačí mi stručně
+                představit svůj projekt a společně zjistíme, jaké řešení
+                pro vás bude nejvhodnější.
+            </p>
+
+            <div class="page-hero-actions">
+                <a href="#order-form" class="btn-primary">
+                    Nezávazně poptat web
+                </a>
+
+                <a href="mailto:jirkabyrt1@seznam.cz" class="btn-secondary">
+                    Napsat e-mail
+                </a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span></span>
+            Kontaktní možnosti níže
+        </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="contact-info-section page-section reveal">
+        <div class="contact-info-layout">
+
+            <div class="contact-intro">
+                <span class="section-number">01</span>
+                <span class="section-label">Kontakt</span>
+
+                <h2>
+                    Ozvěte se způsobem, který vám vyhovuje.
+                </h2>
+
+                <p>
+                    Nejrychlejší je vyplnit nezávaznou poptávku níže.
+                    Můžete mi ale také napsat přímo na e-mail nebo sociální sítě.
+                </p>
+
+                <div class="contact-response">
+                    <span class="status-dot"></span>
+
+                    <div>
+                        <strong>Obvykle odpovídám do 24 hodin</strong>
+                        <p>
+                            Jakmile zprávu uvidím, ozvu se a domluvíme další postup.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-methods">
+
+                <a
+                    href="mailto:jirkabyrt1@seznam.cz"
+                    class="contact-method-card"
+                >
+                    <div class="contact-method-icon">✉</div>
+
+                    <div>
+                        <span>E-mail</span>
+                        <strong>jirkabyrt1@seznam.cz</strong>
+                        <p>Vhodné pro poptávky a podrobnější zprávy.</p>
+                    </div>
+
+                    <span class="contact-arrow">→</span>
+                </a>
+
+                <a
+                    href="https://github.com/jiribyrt"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-method-card"
+                >
+                    <div class="contact-method-icon">&lt;/&gt;</div>
+
+                    <div>
+                        <span>GitHub</span>
+                        <strong>Jiří Byrt</strong>
+                        <p>Ukázky kódu a zveřejněných projektů.</p>
+                    </div>
+
+                    <span class="contact-arrow">→</span>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FORMULÁŘ -->
+    <section class="order-section page-section reveal" id="order-form">
+        <div class="section-heading">
+            <span>Nezávazná poptávka</span>
+            <h2>Řekněte mi něco o svém projektu</h2>
+            <p>
+                Vyberte službu a vyplňte základní informace.
+                Na podrobnosti se vás případně doptám osobně.
+            </p>
+        </div>
+
+        <form class="project-form" id="projectForm">
+
+            <!-- KROK 1 -->
+            <fieldset class="form-section">
+                <legend>
+                    <span>01</span>
+                    Jakou službu potřebujete?
+                </legend>
+
+                <p class="form-section-description">
+                    Vyberte možnost, která nejlépe odpovídá vašemu projektu.
+                </p>
+
+                <div class="service-choice-grid">
+
+                    <label class="service-choice featured-choice">
+                        <input
+                            type="radio"
+                            name="service"
+                            value="Web na míru"
+                            required
+                        >
+
+                        <span class="choice-selected">✓</span>
+
+                        <div class="choice-top">
+                            <span class="choice-number">01</span>
+                            <span class="choice-badge">Nejčastější volba</span>
+                        </div>
+
+                        <div class="choice-icon">✦</div>
+
+                        <h3>Web na míru</h3>
+
+                        <p>
+                            Moderní prezentační web vytvořený podle vaší značky,
+                            služeb a cílové skupiny.
+                        </p>
+
+                        <ul>
+                            <li>Originální vzhled</li>
+                            <li>Responzivní provedení</li>
+                            <li>Základní SEO</li>
+                            <li>Pomoc se spuštěním</li>
+                        </ul>
+
+                        <div class="choice-suitable">
+                            <span>Vhodné pro</span>
+                            <strong>
+                                Podnikatele, živnostníky a menší firmy
+                            </strong>
+                        </div>
+                    </label>
+
+                    <label class="service-choice">
+                        <input
+                            type="radio"
+                            name="service"
+                            value="Redesign webu"
+                            required
+                        >
+
+                        <span class="choice-selected">✓</span>
+
+                        <div class="choice-top">
+                            <span class="choice-number">02</span>
+                        </div>
+
+                        <div class="choice-icon">↻</div>
+
+                        <h3>Redesign webu</h3>
+
+                        <p>
+                            Modernizace staršího webu, lepší struktura,
+                            čitelnost a zobrazení na mobilních zařízeních.
+                        </p>
+
+                        <ul>
+                            <li>Modernizace vzhledu</li>
+                            <li>Lepší přehlednost</li>
+                            <li>Mobilní verze</li>
+                            <li>Úprava funkcí a obsahu</li>
+                        </ul>
+
+                        <div class="choice-suitable">
+                            <span>Vhodné pro</span>
+                            <strong>
+                                Starší nebo neefektivní webové stránky
+                            </strong>
+                        </div>
+                    </label>
+
+                    <label class="service-choice">
+                        <input
+                            type="radio"
+                            name="service"
+                            value="Správa a úpravy webu"
+                            required
+                        >
+
+                        <span class="choice-selected">✓</span>
+
+                        <div class="choice-top">
+                            <span class="choice-number">03</span>
+                        </div>
+
+                        <div class="choice-icon">⚙</div>
+
+                        <h3>Správa a úpravy webu</h3>
+
+                        <p>
+                            Pomoc s aktualizacemi, opravami,
+                            novým obsahem a postupným rozvojem webu.
+                        </p>
+
+                        <ul>
+                            <li>Úprava textů a obrázků</li>
+                            <li>Přidávání sekcí</li>
+                            <li>Technická pomoc</li>
+                            <li>Průběžné konzultace</li>
+                        </ul>
+
+                        <div class="choice-suitable">
+                            <span>Vhodné pro</span>
+                            <strong>
+                                Weby, které se mají dále rozvíjet
+                            </strong>
+                        </div>
+                    </label>
+
+                </div>
+
+                <p class="field-error" id="serviceError">
+                    Vyberte prosím jednu službu.
+                </p>
+            </fieldset>
+
+            <!-- KROK 2 -->
+            <fieldset class="form-section">
+                <legend>
+                    <span>02</span>
+                    Základní informace
+                </legend>
+
+                <p class="form-section-description">
+                    Tyto údaje mi pomohou pochopit, kdo jste a jak vás kontaktovat.
+                </p>
+
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="name">
+                            Jméno a příjmení
+                            <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Jan Novák"
+                            autocomplete="name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="company">
+                            Firma nebo značka
+                        </label>
+
+                        <input
+                            type="text"
+                            id="company"
+                            name="company"
+                            placeholder="Novák Stav"
+                            autocomplete="organization"
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">
+                            E-mail
+                            <span>*</span>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="jan@firma.cz"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="phone">
+                            Telefon
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+420 123 456 789"
+                            autocomplete="tel"
+                        >
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- KROK 3 -->
+            <fieldset class="form-section">
+                <legend>
+                    <span>03</span>
+                    Něco o projektu
+                </legend>
+
+                <p class="form-section-description">
+                    Nemusíte znát technické detaily. Stačí projekt popsat vlastními slovy.
+                </p>
+
+                <div class="form-grid">
+
+                    <div class="form-field form-field-full">
+                        <label for="projectDescription">
+                            Co děláte a k čemu má web sloužit?
+                            <span>*</span>
+                        </label>
+
+                        <textarea
+                            id="projectDescription"
+                            name="projectDescription"
+                            rows="6"
+                            placeholder="Provozuji menší stavební firmu a potřebuji web, kde představím služby, ukázky realizací a kontaktní údaje..."
+                            required
+                        ></textarea>
+
+                        <small>
+                            Stačí několik vět. Na podrobnosti se případně doptám.
+                        </small>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="currentWebsite">
+                            Máte současný web?
+                        </label>
+
+                        <input
+                            type="url"
+                            id="currentWebsite"
+                            name="currentWebsite"
+                            placeholder="https://vasweb.cz"
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="deadline">
+                            Kdy by měl být web přibližně hotový?
+                        </label>
+
+                        <select id="deadline" name="deadline">
+                            <option value="">Vyberte možnost</option>
+                            <option value="Co nejdříve">Co nejdříve</option>
+                            <option value="Do 2 týdnů">Do 2 týdnů</option>
+                            <option value="Do jednoho měsíce">Do jednoho měsíce</option>
+                            <option value="Do 2–3 měsíců">Do 2–3 měsíců</option>
+                            <option value="Termín není rozhodující">
+                                Termín není rozhodující
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="budget">
+                            Orientační rozpočet
+                        </label>
+
+                        <select id="budget" name="budget">
+                            <option value="">Nechci zatím uvádět</option>
+                            <option value="Do 3 000 Kč">Do 3 000 Kč</option>
+                            <option value="3 000–6 000 Kč">3 000–6 000 Kč</option>
+                            <option value="6 000–10 000 Kč">6 000–10 000 Kč</option>
+                            <option value="10 000 Kč a více">
+                                10 000 Kč a více
+                            </option>
+                            <option value="Potřebuji poradit">
+                                Potřebuji poradit
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="contactPreference">
+                            Jak vás mám nejlépe kontaktovat?
+                        </label>
+
+                        <select id="contactPreference" name="contactPreference">
+                            <option value="E-mailem">E-mailem</option>
+                            <option value="Telefonicky">Telefonicky</option>
+                            <option value="Je mi to jedno">Je mi to jedno</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field form-field-full">
+                        <label for="inspiration">
+                            Máte nějaké weby, které se vám líbí?
+                        </label>
+
+                        <textarea
+                            id="inspiration"
+                            name="inspiration"
+                            rows="3"
+                            placeholder="Můžete vložit odkazy nebo stručně popsat požadovaný styl..."
+                        ></textarea>
+                    </div>
+
+                    <div class="form-field form-field-full">
+                        <label for="additionalInfo">
+                            Ještě něco, co bych měl vědět?
+                        </label>
+
+                        <textarea
+                            id="additionalInfo"
+                            name="additionalInfo"
+                            rows="4"
+                            placeholder="Logo už máme, fotografie dodáme později..."
+                        ></textarea>
+                    </div>
+
+                </div>
+            </fieldset>
+
+            <!-- ODESLÁNÍ -->
+            <div class="form-submit-area">
+                <div class="form-submit-copy">
+                    <span>Nezávazná poptávka</span>
+
+                    <h3>Odesláním se k ničemu nezavazujete.</h3>
+
+                    <p>
+                        Zadané informace použiji pouze k tomu, abych vám odpověděl
+                        a mohl lépe pochopit váš projekt.
+                    </p>
+                </div>
+
+                <button type="submit" class="form-submit-button">
+                    Odeslat poptávku
+                    <span>→</span>
+                </button>
+            </div>
+
+            <div
+                class="form-message"
+                id="formMessage"
+                role="status"
+                aria-live="polite"
+            ></div>
+
+        </form>
+    </section>
+
+    <!-- DALŠÍ POSTUP -->
+    <section class="after-submit-section page-section reveal">
+        <div class="section-heading">
+            <span>Co bude následovat?</span>
+            <h2>Jednoduché tři kroky po odeslání</h2>
+        </div>
+
+        <div class="after-submit-grid">
+
+            <article>
+                <span>01</span>
+                <h3>Projdu poptávku</h3>
+                <p>
+                    Seznámím se s vaším projektem a připravím si případné otázky.
+                </p>
+            </article>
+
+            <article>
+                <span>02</span>
+                <h3>Ozvu se vám</h3>
+                <p>
+                    Domluvíme si další komunikaci a upřesníme potřebné informace.
+                </p>
+            </article>
+
+            <article>
+                <span>03</span>
+                <h3>Připravím návrh postupu</h3>
+                <p>
+                    Navrhnu řešení, přibližný rozsah práce a další postup spolupráce.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="page-footer">
+    <div class="footer-top">
+
+        <div class="footer-brand">
+            <a href="index.html" class="footer-logo">Jiří Byrt</a>
+
+            <p>
+                Moderní weby pro podnikatele,
+                osobní značky a menší firmy.
+            </p>
+
+            <a href="mailto:jirkabyrt1@seznam.cz" class="footer-email">
+                jirkabyrt1@seznam.cz
+            </a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Navigace</h3>
+            <a href="index.html">Domů</a>
+            <a href="about.html">O mně</a>
+            <a href="services.html">Služby</a>
+            <a href="portfolio.html">Portfolio</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Spolupráce</h3>
+            <a href="process.html">Proces</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="#order-form">Nezávazná konzultace</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Sociální sítě</h3>
+            <a href="https://github.com/jiribyrt" target="_blank" rel="noopener">GitHub</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Jiří Byrt. Všechna práva vyhrazena.</p>
+        <a href="#top">Zpět nahoru ↑</a>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
